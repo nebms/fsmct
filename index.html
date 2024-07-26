@@ -10,10 +10,9 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      min-height: 100vh;
-      background-color: #f0f0f0;
       margin: 0;
       padding: 0;
+      background-color: transparent; /* Make the background transparent to blend with Glide app */
     }
     .datetime-container {
       text-align: center;
@@ -55,3 +54,10 @@
           second: "2-digit"
         });
       }
+
+      updateDateTime();
+      setInterval(updateDateTime, 1000);
+    });
+  </script>
+</body>
+</html>
